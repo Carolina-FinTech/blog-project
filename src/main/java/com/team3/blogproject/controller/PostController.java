@@ -40,7 +40,7 @@ public class PostController {
             return "redirect:/";
         }
         postService.savePost(post);
-        return "redirect:/";
+        return "redirect:/?submit";
     }
 
     @GetMapping("/post/{id}")
